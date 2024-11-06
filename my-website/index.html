@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Application</h1>
+            <p>Get the latest weather updates for your city.</p>
+        </header>
+        <div class="input-container">
+            <input type="text" id="city" placeholder="Enter city name..." />
+            <button id="searchButton">Get Weather</button>
+        </div>
+        <div id="loading" class="loading" hidden>Loading...</div>
+        <div id="result" class="result"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
