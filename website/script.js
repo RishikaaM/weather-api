@@ -18,7 +18,7 @@ document.getElementById('searchButton').addEventListener('click', async () => {
     loadingDiv.hidden = false;
 
     try {
-        const response = await fetch(`http://localhost:3001/weather?city=${city}`);
+        const response = await fetch(`/weather?city=${city}`);
         loadingDiv.hidden = true; // Hide loading indicator after fetch
 
         if (!response.ok) {
