@@ -12,9 +12,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "latest",  
-    "cors": "latest",    
-    "dotenv": "latest",     
-    "node-fetch": "latest"  
+    "express": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "node-fetch": "latest"
   }
 }
