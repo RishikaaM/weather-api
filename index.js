@@ -12,10 +12,13 @@ app.use(cors({
     origin: '*'
 }));
 
+app.use(express.json()) // enables the Express application to parse incoming JSON data from the request body. without this, the req.body object will be undefined
+app.use(express.static('website')) 
+
 // Root endpoint
-app.get('/', (req, res) => {
-    res.send('Welcome to the API!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Welcome to the API!');
+// });
 
 // Weather endpoint that uses the OpenWeatherMap API
 app.get('/weather', async (req, res) => {
